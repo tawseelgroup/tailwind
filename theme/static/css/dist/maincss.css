@@ -1,0 +1,11 @@
+.input[type="text"]{
+    background-color: green !important;
+    color: white !important;
+}
+
+.input-styles{
+    border-radius: 5px;
+    margin-top: 5px;
+    
+}
+

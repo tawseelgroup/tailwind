@@ -23,7 +23,9 @@
 				</ul>
 				<p class='text-blue-500 self-center font-bold'>Login</p>
 			</nav>
-			{% block container %}{% endblock container %}
+			<div class='input-style'>
+				{% block container %}{% endblock container %}
+			</div>
 		</section>
 	</body>
 	<style>
@@ -98,7 +100,8 @@
 			font-weight: 900;
 			font-style: italic;
 		  }
+
+		</style>
 		  
-	</style>
-	<script src="{% static "tabs.js" %}"></script>
+	{% comment %} <script src="{% static 'tabs.js' %}"></script> {% endcomment %}
 </html>

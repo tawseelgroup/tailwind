@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from .forms import CompanyForm
 
 # Create your views here.
 
@@ -16,6 +17,10 @@ class Hr(TemplateView):
     
 class Production(TemplateView):
     template_name = 'production.html'
+    
+def companies(request):
+    form = CompanyForm
+    return render(request, 'companies.html', {'form': form})
     
     
     
